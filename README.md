@@ -6,9 +6,9 @@ Mission for Hairui Zhu:
 
 ## Requirements
 
-The code runs with Python 3.7, CUDA 10.1 The following additional dependencies need to be installed:
+The code runs with Python 3.7, Pytorch 1.3.0, CUDA 10.1 The following additional dependencies need to be installed:
 
-\bullet [PyTorch](https://pytorch.org/)
+* [PyTorch](https://pytorch.org/)
 
 
 ## Download dataset
@@ -22,10 +22,9 @@ Download pre-trained model from this [link]()
 ## Normal Estimation
 
 To estimate point cloud properties using default settings:
-
-'''
+```
 python calculate.py
-'''
+```
 
 
 
