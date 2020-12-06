@@ -27,7 +27,7 @@ To estimate point cloud properties using default settings:
 python calculate.py
 ```
 
-# Traning
+## Traning
 
 To train on the PCPNet train dataset, run train.sh and note the following parameters in train.py:
 
@@ -47,5 +47,9 @@ Example:
 ```
 python train.py --name='' --patch_radius='k256_s007_nostd_sumd_pt32_pl32_num_c' --points_per_patch=[256] --patch_point_count_std=0.0 --patch_radius=[0.07] --sym_op='sumd --generate_points_num=32   --hypotheses=32 
 ```
+
+## Evaluate
+
+
 
 
