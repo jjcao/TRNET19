@@ -9,11 +9,12 @@ Mission for Hairui Zhu:
 The code runs with Python 3.7, Pytorch 1.3.0, CUDA 10.1 The following additional dependencies need to be installed:
 
 * [PyTorch](https://pytorch.org/)
+* Numpy
 
 
 ## Download dataset
 
-Run `<python data/download_pclouds.py>` to download PCPNET data.
+Run `python data/download_pclouds.py` to download PCPNET data.
 
 ## Model
 
