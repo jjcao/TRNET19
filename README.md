@@ -18,7 +18,7 @@ Run `python data/download_pclouds.py` to download PCPNET data.
 
 ## Model
 
-We provide single scale and multi-scale expert pre-trained models. You can download it from the following two connections through Baidu cloud diskk:
+We provide single scale and multi-scale expert pre-trained models. You can download it from the following two connections through Baidu cloud:
 * [Single scale model](https://pan.baidu.com/s/1aJMFN8YB_u-wRwE9MiWkfg), Extraction code: `jsar`.
 * [Multi-scalse export model](https://pan.baidu.com/s/1U5ah3OLIkMf9ate9tdzN1w),Extraction code: `kk68`.
 
@@ -51,6 +51,13 @@ python train.py --name='' --patch_radius='k256_s007_nostd_sumd_pt32_pl32_num_c' 
 ```
 
 ## Evaluate
+
+You can use `evaluate.py` to evaluate point cloud normal estimation, and we provide three evaluation indicators: RMS, PGP, PGP5.
+
+Example:
+```
+python evaluate.py --normal_result_path='/path/to/normal result' --data_path='/path/to/groundtruth'
+```
 
 
 
