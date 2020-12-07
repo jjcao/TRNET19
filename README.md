@@ -18,7 +18,9 @@ Run `python data/download_pclouds.py` to download PCPNET data.
 
 ## Model
 
-Download pre-trained model from this [link]()
+We provide single scale and multi-scale expert pre-trained models. You can download it from the following two connections through Baidu cloud diskk:
+* [Single scale model](https://pan.baidu.com/s/1aJMFN8YB_u-wRwE9MiWkfg), Extraction code: `jsar`.
+* [Multi-scalse export model](https://pan.baidu.com/s/1U5ah3OLIkMf9ate9tdzN1w),Extraction code: `kk68`.
 
 ## Normal Estimation
 
