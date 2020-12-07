@@ -12,11 +12,11 @@ The code runs with Python 3.7, Pytorch 1.3.0, CUDA 10.1 The following additional
 * Numpy
 
 
-## Download dataset
+## Download Dataset
 
 Run `python data/download_pclouds.py` to download PCPNET data.
 
-## Model
+## Pre-trained Model
 
 We provide single scale and multi-scale expert pre-trained models. You can download it from the following two connections through Baidu cloud:
 * [Single scale model](https://pan.baidu.com/s/1aJMFN8YB_u-wRwE9MiWkfg), Extraction code: `jsar`.
