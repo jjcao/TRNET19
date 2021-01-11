@@ -61,6 +61,7 @@ python evaluate.py --normal_result_path='/path/to/normal result' --data_path='/p
 
 ## Eval PVC Dataset
 
+Note: each point in PCV dataset will have multiple normal values, and the number is different. For example, one point may have 7 normal values, and another point may have 5 normal values. In the previous experiment, we only selected a fixed method to estimate the true value. Later, we will store all the normal phase values of each point in a separate list. When we evaluate the normal phase, we will use the predicted normal and all the normal in the list to make an evaluation, and take the best value as the final output.
 
 
 
