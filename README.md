@@ -59,6 +59,10 @@ Example:
 python evaluate.py --normal_result_path='/path/to/normal result' --data_path='/path/to/groundtruth'
 ```
 
+## Eval PVC Dataset
+
+
+
 
 
 
