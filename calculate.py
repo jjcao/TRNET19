@@ -23,22 +23,22 @@ def parse_arguments():
     parser.add_argument("--local_rank", type=int, default=0)
 
     # naming / file handling
-    parser.add_argument('--indir', type=str, default='/data/pclouds', help='input folder (point clouds)')
+    parser.add_argument('--indir', type=str, default='../data/pclouds', help='input folder (point clouds)')
     #parser.add_argument('--indir', type=str, default='/data/nyuv2_surfacenormal_metadata/pcloud_test_5000', help='input folder (point clouds)')
-    parser.add_argument('--indir2', type=str, default='../../data/results/k256_s007_nostd_sumd_pt32_pl32_num', help='input folder (point clouds)')
-    parser.add_argument('--outdir', type=str, default='../../data/results', help='output folder (estimated point cloud properties)')
+    parser.add_argument('--indir2', type=str, default='../results/TRNET', help='input folder (point clouds)')
+    parser.add_argument('--outdir', type=str, default='../results/pclouds/TRNET', help='output folder (estimated point cloud properties)')
     # parser.add_argument('--dataset', type=str, default='trainingset_whitenoise.txt', help='shape set file name')
     # parser.add_argument('--dataset', type=str, default='validationset_whitenoise.txt', help='shape set file name')
     parser.add_argument('--dataset', type=str, default='testset_all.txt', help='shape set file name')
     
-    parser.add_argument('--modeldir', type=str, default='../../data/dsacmodels', help='model folder')
-    parser.add_argument('--models', type=str, default='k256_s007_nostd_sumd_pt32_pl32_dist_c', help='names of trained models, can evaluate multiple models') 
+    parser.add_argument('--modeldir', type=str, default='models', help='model folder')
+    parser.add_argument('--models', type=str, default='k256_s007_nostd_sumd_pt32_pl32_num', help='names of trained models, can evaluate multiple models') 
     parser.add_argument('--distributed', type=int, default=False, help='.')
     parser.add_argument('--modelpostfix', type=str, default='_model.pth', help='model file postfix')
     parser.add_argument('--parmpostfix', type=str, default='_params.pth', help='parameter file postfix')
-    parser.add_argument('--gpu_idx', type=int, default=0, help='set < 0 to use CPU')
+    parser.add_argument('--gpu_idx', type=int, default=1, help='set < 0 to use CPU')
 
-    parser.add_argument('--sparse_patches', type=int, default=False, help='evaluate on a sparse set of patches, given by a .pidx file containing the patch center point indices.')
+    parser.add_argument('--sparse_patches', type=int, default=True, help='evaluate on a sparse set of patches, given by a .pidx file containing the patch center point indices.')
     parser.add_argument('--sampling', type=str, default='full', help='sampling strategy, any of:\n'
                         'full: evaluate all points in the dataset\n'
                         'sequential_shapes_random_patches: pick n random points from each shape as patch centers, shape order is not randomized')
